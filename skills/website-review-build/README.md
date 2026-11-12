@@ -29,11 +29,11 @@ It covers SEO, accessibility (WCAG 2.2), performance, security and privacy, cont
 
 ## Install
 
-This skill is part of [claude-skills](../../README.md). The repository README has the install steps for Claude Code, Claude.ai and other agents. To install this skill on its own in Claude Code:
+This skill is part of [before-it-ships](../../README.md). The repository README has the install steps for Claude Code, Claude.ai and other agents. To install this skill on its own in Claude Code:
 
 ```bash
-git clone --depth 1 https://github.com/AbhiDas-lab/claude-skills.git /tmp/claude-skills
-cp -r /tmp/claude-skills/skills/website-review-build ~/.claude/skills/
+git clone --depth 1 https://github.com/AbhiDas-lab/before-it-ships.git /tmp/before-it-ships
+cp -r /tmp/before-it-ships/skills/website-review-build ~/.claude/skills/
 ```
 
 The folder name should match the `name` in `SKILL.md` (`website-review-build`).

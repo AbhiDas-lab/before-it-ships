@@ -1,15 +1,15 @@
 {
-  "name": "abhidas-skills",
+  "name": "before-it-ships",
   "owner": {
     "name": "AbhiDas",
     "url": "https://github.com/AbhiDas-lab"
   },
   "metadata": {
-    "description": "Agent skills for shipping websites that stay correct and for checking what Claude helped write before it goes out."
+    "description": "Agent skills that check work before it leaves your hands: a website before it deploys, a draft before it is sent, a post before it is published."
   },
   "plugins": [
     {
-      "name": "abhidas-skills",
+      "name": "before-it-ships",
       "source": "./",
       "strict": false,
       "skills": [
@@ -23,7 +23,7 @@
         "name": "AbhiDas",
         "url": "https://github.com/AbhiDas-lab"
       },
-      "repository": "https://github.com/AbhiDas-lab/claude-skills",
+      "repository": "https://github.com/AbhiDas-lab/before-it-ships",
       "license": "MIT",
       "category": "productivity"
     }

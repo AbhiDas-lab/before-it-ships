@@ -1,6 +1,8 @@
-# claude-skills
+# before-it-ships
 
-Agent skills written for day-to-day work at a small company and then made general. Each one came out of real use: the website skill from months of audits on a production marketing site, the two writing skills from reviewing drafts before they went to customers and onto a company page.
+Agent skills that check work before it leaves your hands: a website before it deploys, a draft before it is sent, a post before it is published.
+
+They were written for day-to-day work at a small company and then made general. Each one came out of real use: the website skill from months of audits on a production marketing site, the two writing skills from reviewing drafts before they went to customers and onto a company page.
 
 They use the Agent Skills format: a `SKILL.md` with any reference files the agent reads only when it needs them. Nothing in them is tied to one company, framework or brand. Where a skill needs house rules (spelling, trademarks, what is confidential), it reads them from your project instructions or `CLAUDE.md`.
 
@@ -19,8 +21,8 @@ They use the Agent Skills format: a `SKILL.md` with any reference files the agen
 Inside a Claude Code session:
 
 ```
-/plugin marketplace add AbhiDas-lab/claude-skills
-/plugin install abhidas-skills@abhidas-skills
+/plugin marketplace add AbhiDas-lab/before-it-ships
+/plugin install before-it-ships@before-it-ships
 ```
 
 That installs all three skills.
@@ -30,11 +32,11 @@ That installs all three skills.
 Copy a skill's folder into your personal skills folder, or into `.claude/skills/` in a project so everyone on that repository gets it:
 
 ```bash
-git clone --depth 1 https://github.com/AbhiDas-lab/claude-skills.git /tmp/claude-skills
+git clone --depth 1 https://github.com/AbhiDas-lab/before-it-ships.git /tmp/before-it-ships
 ```
 
 ```bash
-cp -r /tmp/claude-skills/skills/second-draft ~/.claude/skills/
+cp -r /tmp/before-it-ships/skills/second-draft ~/.claude/skills/
 ```
 
 The folder name should match the `name` in its `SKILL.md`.
