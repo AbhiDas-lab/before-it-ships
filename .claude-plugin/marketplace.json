@@ -1,0 +1,31 @@
+{
+  "name": "abhidas-skills",
+  "owner": {
+    "name": "AbhiDas",
+    "url": "https://github.com/AbhiDas-lab"
+  },
+  "metadata": {
+    "description": "Agent skills for shipping websites that stay correct and for checking what Claude helped write before it goes out."
+  },
+  "plugins": [
+    {
+      "name": "abhidas-skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/website-review-build",
+        "./skills/second-draft",
+        "./skills/company-post-scoring"
+      ],
+      "description": "Three skills: website-review-build (audit and build sites so every rule is a check that can fail), second-draft (trace every number in a draft to its source before it is sent) and company-post-scoring (a gate and 16-point rubric for company page posts).",
+      "version": "1.0.0",
+      "author": {
+        "name": "AbhiDas",
+        "url": "https://github.com/AbhiDas-lab"
+      },
+      "repository": "https://github.com/AbhiDas-lab/claude-skills",
+      "license": "MIT",
+      "category": "productivity"
+    }
+  ]
+}
