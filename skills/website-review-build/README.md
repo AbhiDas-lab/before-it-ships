@@ -29,7 +29,14 @@ It covers SEO, accessibility (WCAG 2.2), performance, security and privacy, cont
 
 ## Install
 
-This skill is part of [before-it-ships](../../README.md). The repository README has the install steps for Claude Code, Claude.ai and other agents. To install this skill on its own in Claude Code:
+This skill is part of [before-it-ships](../../README.md). The repository README has the install steps for Claude Code, Claude.ai and other agents. To install this skill on its own in Claude Code, as a plugin that updates:
+
+```
+/plugin marketplace add AbhiDas-lab/before-it-ships
+/plugin install website-review-build@before-it-ships
+```
+
+Or copy the folder, which does not update:
 
 ```bash
 git clone --depth 1 https://github.com/AbhiDas-lab/before-it-ships.git /tmp/before-it-ships

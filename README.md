@@ -16,20 +16,27 @@ They use the Agent Skills format: a `SKILL.md` with any reference files the agen
 
 ## Install
 
-### Claude Code, as a plugin
+### Claude Code
 
-Inside a Claude Code session:
+Each skill is its own plugin, so you install only the ones you want. Inside a Claude Code session, add the marketplace once:
 
 ```
 /plugin marketplace add AbhiDas-lab/before-it-ships
-/plugin install before-it-ships@before-it-ships
 ```
 
-That installs all three skills.
+Then install any of the three:
 
-### Claude Code, one skill at a time
+```
+/plugin install website-review-build@before-it-ships
+/plugin install second-draft@before-it-ships
+/plugin install company-post-scoring@before-it-ships
+```
 
-Copy a skill's folder into your personal skills folder, or into `.claude/skills/` in a project so everyone on that repository gets it:
+Installed this way, a skill updates when the marketplace does.
+
+### Claude Code, without the plugin system
+
+Copy a skill's folder into your personal skills folder, or into `.claude/skills/` in a project so everyone on that repository gets it. A copied folder does not update; copy it again to pick up changes.
 
 ```bash
 git clone --depth 1 https://github.com/AbhiDas-lab/before-it-ships.git /tmp/before-it-ships

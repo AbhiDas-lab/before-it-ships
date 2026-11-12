@@ -9,16 +9,48 @@
   },
   "plugins": [
     {
-      "name": "before-it-ships",
+      "name": "website-review-build",
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/website-review-build",
-        "./skills/second-draft",
+        "./skills/website-review-build"
+      ],
+      "description": "Audit and build marketing and content websites so they stay correct after launch: every rule an automated check, every check in a gate that can stop a bad deploy, every check seen to fail.",
+      "version": "1.1.0",
+      "author": {
+        "name": "AbhiDas",
+        "url": "https://github.com/AbhiDas-lab"
+      },
+      "repository": "https://github.com/AbhiDas-lab/before-it-ships",
+      "license": "MIT",
+      "category": "web-development"
+    },
+    {
+      "name": "second-draft",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/second-draft"
+      ],
+      "description": "Question a draft Claude helped write before it goes out: trace every number, date and claim to an exact line, page or cell in your files, read it as its reader would, and apply your organisation's rules.",
+      "version": "1.1.0",
+      "author": {
+        "name": "AbhiDas",
+        "url": "https://github.com/AbhiDas-lab"
+      },
+      "repository": "https://github.com/AbhiDas-lab/before-it-ships",
+      "license": "MIT",
+      "category": "productivity"
+    },
+    {
+      "name": "company-post-scoring",
+      "source": "./",
+      "strict": false,
+      "skills": [
         "./skills/company-post-scoring"
       ],
-      "description": "Three skills: website-review-build (audit and build sites so every rule is a check that can fail), second-draft (trace every number in a draft to its source before it is sent) and company-post-scoring (a gate and 16-point rubric for company page posts).",
-      "version": "1.0.0",
+      "description": "Score or draft posts for a company page against a pass-or-fail gate, eight criteria out of 16 and a publish threshold.",
+      "version": "1.1.0",
       "author": {
         "name": "AbhiDas",
         "url": "https://github.com/AbhiDas-lab"
